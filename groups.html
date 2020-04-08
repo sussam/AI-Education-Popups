@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Social Media</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #9B93F2;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Shift</a>
+            </div>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="Search..">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <a href="search.html"><span class="glyphicon glyphicon-search"></span></a>
+                        </button>
+                    </span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Tom</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <div class="row" id="whole">
+            <div class="col-sm-3 well" id="group_sec">
+                <p>Groups You're In</p>
+                <hr>
+                <ul class="text-left" id="group_list">
+                    <li><span class="glyphicon glyphicon-user"></span> UF Gamers</li>
+                    <li><span class="glyphicon glyphicon-user"></span> UF Class of 2020</li>
+                    <li><span class="glyphicon glyphicon-user"></span> UF Business</li>
+                </ul>
+                <br>
+            </div>
+
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="panel panel-default text-left">
+                            <div class="panel-body">
+                                <p contenteditable="true">Suggested Groups</p>
+                                <hr>
+                                <div class="col-md-4">
+                                    <div class="well">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <img id="group_pic" src="pics/group_pic.png">
+                                                <p><b>Disapproving Corgis</b>
+                                                    <br> 500k members
+                                                </p>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <img src="gifs/6C_groupsYouMayLike.gif"
+                                                    style="border-radius:0%;width:100%;height:100%">
+                                            </div>
+                                        </div>
+
+                                        <br>
+                                        <div class="buttons">
+                                            <button type="button" class="btn btn-default btn-sm btn-block">
+                                                <span class="glyphicon glyphicon-thumbs-up"></span> Join
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="well">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <img id="group_pic" src="pics/group_pic.png">
+                                                <p><b>Disapproving Corgis</b>
+                                                    <br> 500k members
+                                                </p>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <img src="gifs/6C_groupsYouMayLike.gif"
+                                                    style="border-radius:0%;width:100%;height:100%">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="buttons">
+                                            <button type="button" class="btn btn-default btn-sm btn-block">
+                                                <span class="glyphicon glyphicon-thumbs-up"></span> Join
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="well">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <img id="group_pic" src="pics/group_pic.png">
+                                                <p><b>Disapproving Corgis</b>
+                                                    <br> 500k members
+                                                </p>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <img src="gifs/6C_groupsYouMayLike.gif"
+                                                    style="border-radius:0%;width:100%;height:100%">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="buttons">
+                                            <button type="button" class="btn btn-default btn-sm btn-block">
+                                                <span class="glyphicon glyphicon-thumbs-up"></span> Join
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="panel panel-default text-left">
+                            <div class="panel-body">
+                                <p contenteditable="true">Friends Groups</p>
+                                <hr>
+                                <div class="col-md-4">
+                                    <div class="well">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <img id="group_pic" src="pics/group_suggested.jpeg">
+                                                <p><b>UF Free Food</b>
+                                                    <br> 500k members
+                                                </p>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <img src="gifs/3D_clusteringSimilar.gif"
+                                                    style="border-radius:0%;width:100%;height:100%">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="buttons">
+                                            <button type="button" class="btn btn-default btn-sm btn-block">
+                                                <span class="glyphicon glyphicon-thumbs-up"></span> Join
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="well">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <img id="group_pic" src="pics/group_suggested.jpeg">
+                                                <p><b>UF Free Food</b>
+                                                    <br> 500k members
+                                                </p>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <img src="gifs/3D_clusteringSimilar.gif"
+                                                    style="border-radius:0%;width:100%;height:100%">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class=" buttons">
+                                            <button type="button" class="btn btn-default btn-sm btn-block">
+                                                <span class="glyphicon glyphicon-thumbs-up"></span> Join
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="well">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <img id="group_pic" src="pics/group_suggested.jpeg">
+                                                <p><b>UF Free Food</b>
+                                                    <br> 500k members
+                                                </p>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <img src="gifs/3D_clusteringSimilar.gif"
+                                                    style="border-radius:0%;width:100%;height:100%">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="buttons">
+                                            <button type="button" class="btn btn-default btn-sm btn-block">
+                                                <span class="glyphicon glyphicon-thumbs-up"></span> Join
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
