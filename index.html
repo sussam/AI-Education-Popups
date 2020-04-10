@@ -18,20 +18,37 @@
     <nav class="navbar">
         <div class=" container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Shift</a>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="navbar-brand" href="#">Shift</a>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <img src="revised_gifs/5_social_media_mouse_tracking.gif"
+                            style="border-radius:0%;width:100%;height:100%;">
+                    </div>
+                </div>
             </div>
             <form class="navbar-form navbar-right" role="search">
                 <div class="form-group input-group">
                     <input type="text" class="form-control" placeholder="Search..">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
-                            <a href="search.html">
-                                <span class="glyphicon glyphicon-search"></span></a>
-                        </button>
+
+                        <div class="dropdown-btn">
+                            <button class="btn btn-default" type="button" id="dropdownMenu2" data-toggle="dropdown">
+                                <a href="search.html">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </a>
+                            </button>
+
+                            <div class="dropdown-menu">
+                                <img src="gifs/7C_searchAsType.gif" style="border-radius:0%;width:100%;height:100%;">
+                            </div>
+                        </div>
                     </span>
                 </div>
             </form>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class=" nav navbar-nav navbar-right">
                 <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Tom</a></li>
             </ul>
         </div>
@@ -59,7 +76,7 @@
                             <p><b>Suggested Friends</b></p>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <img src="gifs/5C_PeopleYouMayLike.gif" style="border-radius:0%;width:100%;height:100%">
+                            <img src="gifs/5B_collectedInfo.gif" style="border-radius:0%;width:100%;height:100%;">
                         </div>
                     </div>
                     <hr>
@@ -133,9 +150,16 @@
                                     <span class="glyphicon glyphicon-user"></span> Create Post</p>
                                 <hr>
                                 <input type="text" id="post_txt" placeholder="What are you thinking?" class="text-left">
-                                <button type="button" class="btn btn-default btn-sm" id="post_button"
-                                    onclick="post_now()"> Post
-                                </button>
+                                <div class="dropdown-btn">
+                                    <button type="button" class="btn btn-default btn-sm drowndown-toggle"
+                                        id="post_button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" onclick="post_now()"> Post
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <img src="gifs/9B_useMarketplace.gif"
+                                            style="border-radius:0%;width:100%;height:100%;">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -153,7 +177,8 @@
                                     <br>1 hr ago</p>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <img src="gifs/3B_bobNotSusan.gif" style="border-radius:0%;width:100%;height:100%">
+                                <img src="gifs/3D_clusteringSimilar.gif"
+                                    style="border-radius:0%;width:100%;height:100%;">
                             </div>
                         </div>
                     </div>
@@ -165,32 +190,46 @@
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="pics/tag_photo.jpg">
+                                <p>Detected with: Josh</p>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <img src="gifs/10D_thisIsBob.gif">
+                                <img src="gifs/10D_thisIsBob.gif" style="border-radius:0%;width:100%;height:100%;">
                             </div>
                         </div>
                         <hr class="line_post">
                         <p id="1" class="text-left"></p>
                         <div class="block-buttons">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-sm" onclick="liked1()">
-                                    <span class="glyphicon glyphicon-thumbs-up"></span> Like
-                                </button>
-                                <button type="button" class="btn btn-default btn-sm" id="comment_button"
-                                    onclick="comments()">
-                                    <span class="glyphicon glyphicon-comment"></span> Comment
-                                </button>
+                                <div class="dropdown-btn">
+                                    <button type="button" class="btn btn-default btn-sm" data-toggle="dropdown"
+                                        onclick="liked1()">
+                                        <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <img src="gifs/3C_tracksLikesAndTime.gif"
+                                            style="border-radius:0%;width:100%;height:100%;">
+                                    </div>
+                                </div>
+                                <div class="dropdown-btn">
+                                    <button type="button" class="btn btn-default btn-sm" data-toggle="dropdown"
+                                        id="comment_button" onclick="comments()">
+                                        <span class="glyphicon glyphicon-comment"></span> Comment
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <img src="gifs/11C_ethnicGroups.gif"
+                                            style="border-radius:0%;width:100%;height:100%;">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <!--<input type="text" id="write_comments" placeholder="Type here..." class="text-left">
+                            <!--<input type="text" id="write_comments" placeholder="Type here..." class="text-left">
                         <div id="comment_posted"></div>-->
-
+                        </div>
                     </div>
                 </div>
+
                 <div class="row well" id="comments">
                     <div class="col-sm-3">
-                        <img src="pics/pic_test.png">
+                        <img src="pics/friend_kevin.jpg">
                         Kevin
                     </div>
                     <div class="col-sm-9" id="tags">
@@ -204,12 +243,68 @@
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="pics/friend_photo.png">
-                                <p><b>John</b>
-                                    <br>1 hr ago</p>
+                                <img src="pics/friend_david.jpg">
+                                <p><b>David</b>
+                                    <br>5 hrs ago</p>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <img src="gifs/3B_bobNotSusan.gif" style="border-radius:0%;width:100%;height:100%">
+                                <img src="gifs/3B_bobNotSusan.gif" style="border-radius:0%;width:100%;height:100%;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-9">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Planning to sell my nintendo switch.
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <img src="gifs/9E_9B_useMarketplace.gif"
+                                    style="border-radius:0%;width:100%;height:100%;">
+                            </div>
+                        </div>
+
+                        <hr class="line_post">
+                        <p id="2" class="text-left"></p>
+                        <div class="block-buttons">
+                            <div class="btn-group">
+                                <div class="dropdown-btn">
+                                    <button type="button" class="btn btn-default btn-sm" data-toggle="dropdown"
+                                        onclick="liked1()">
+                                        <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <img src="gifs/3C_tracksLikesAndTime.gif"
+                                            style="border-radius:0%;width:100%;height:100%;">
+                                    </div>
+                                </div>
+                                <div class="dropdown-btn">
+                                    <button type="button" class="btn btn-default btn-sm" data-toggle="dropdown"
+                                        id="comment_button" onclick="comments()">
+                                        <span class="glyphicon glyphicon-comment"></span> Comment
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <img src="gifs/11C_ethnicGroups.gif"
+                                            style="border-radius:0%;width:100%;height:100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row well" id="post_well">
+                    <div class="col-sm-3">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="pics/friend_josh.jpg">
+                                <p><b>Josh</b>
+                                    <br>7 hrs ago</p>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <img src="gifs/3B_bobNotSusan.gif" style="border-radius:0%;width:100%;height:100%;">
                             </div>
                         </div>
                     </div>
@@ -221,63 +316,33 @@
                                 Just got a new game. Excited to play it!
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <img src="gifs/9D_textRecognition.gif" style="border-radius:0%;width:100%;height:100%">
-                            </div>
-                        </div>
-
-                        <hr class="line_post">
-                        <p id="2" class="text-left"></p>
-                        <div class="block-buttons">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-sm " onclick="liked2()">
-                                    <span class="glyphicon glyphicon-thumbs-up"></span> Like
-                                </button>
-                                <button type="button" class="btn btn-default btn-sm ">
-                                    <span class="glyphicon glyphicon-comment"></span> Comment
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row well" id="post_well">
-                    <div class="col-sm-3">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="pics/friend_photo.png">
-                                <p><b>John</b>
-                                    <br>1 hr ago</p>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <img src="gifs/3B_bobNotSusan.gif" style="border-radius:0%;width:100%;height:100%">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-9">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <p>Just Forgot that I had to mention something about someone to
-                                    <br>someone about how I
-                                    forgot
-                                </p>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <img src="gifs/9D_textRecognition.gif" style="border-radius:0%;width:100%;height:100%">
+                                <img src="gifs/9D_textRecognition.gif" style="border-radius:0%;width:100%;height:100%;">
                             </div>
                         </div>
                         <hr class="line_post">
                         <p id="3" class="text-left"></p>
                         <div class="block-buttons">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-sm" onclick="liked3()">
-                                    <span class="glyphicon glyphicon-thumbs-up"></span> Like
-                                </button>
-                                <button type="button" class="btn btn-default btn-sm ">
-                                    <span class="glyphicon glyphicon-comment"></span> Comment
-                                </button>
+                                <div class="dropdown-btn">
+                                    <button type="button" class="btn btn-default btn-sm" data-toggle="dropdown"
+                                        onclick="liked1()">
+                                        <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <img src="gifs/3C_tracksLikesAndTime.gif"
+                                            style="border-radius:0%;width:100%;height:100%;">
+                                    </div>
+                                </div>
+                                <div class="dropdown-btn">
+                                    <button type="button" class="btn btn-default btn-sm" data-toggle="dropdown"
+                                        id="comment_button" onclick="comments()">
+                                        <span class="glyphicon glyphicon-comment"></span> Comment
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <img src="gifs/11C_ethnicGroups.gif"
+                                            style="border-radius:0%;width:100%;height:100%;">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -288,9 +353,9 @@
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="pics/friend_photo.png">
-                                <p><b>John</b>
-                                    <br>1 hr ago</p>
+                                <img src="pics/friend_patrick.jpg">
+                                <p><b>Patrick</b>
+                                    <br>1 day ago</p>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <img src="gifs/3B_bobNotSusan.gif" style="border-radius:0%;width:100%;height:100%">
@@ -302,10 +367,7 @@
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <p>Just Forgot that I had to mention something about someone to
-                                    <br>someone about how I
-                                    forgot
-                                </p>
+                                I'm soooo bored..
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <img src="gifs/9D_textRecognition.gif" style="border-radius:0%;width:100%;height:100%">
@@ -315,12 +377,26 @@
                         <p id="4" class="text-left"></p>
                         <div class="block-buttons">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-sm " onclick="liked4()">
-                                    <span class="glyphicon glyphicon-thumbs-up"></span> Like
-                                </button>
-                                <button type="button" class="btn btn-default btn-sm ">
-                                    <span class="glyphicon glyphicon-comment"></span> Comment
-                                </button>
+                                <div class="dropdown-btn">
+                                    <button type="button" class="btn btn-default btn-sm" data-toggle="dropdown"
+                                        onclick="liked1()">
+                                        <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <img src="gifs/3C_tracksLikesAndTime.gif"
+                                            style="border-radius:0%;width:100%;height:100%;">
+                                    </div>
+                                </div>
+                                <div class="dropdown-btn">
+                                    <button type="button" class="btn btn-default btn-sm" data-toggle="dropdown"
+                                        id="comment_button" onclick="comments()">
+                                        <span class="glyphicon glyphicon-comment"></span> Comment
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <img src="gifs/11C_ethnicGroups.gif"
+                                            style="border-radius:0%;width:100%;height:100%;">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -335,20 +411,20 @@
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <a href="http://www.wayfair.com"><img src="pics/ad1.png"></a>
+                                <a href="https://www.crunch.com"><img src="pics/guy_ad.png"></a>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <img src="gifs/4C_adsClicked.gif" style="border-radius:0%;width:100%;height:100%">
+                                <img src="gifs/4C_adsClicked.gif" style="border-radius:0%;width:100%;height:100%;">
                             </div>
                         </div>
                         <hr>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <a href="http://www.wayfair.com"><img src="pics/ad1.png"></a>
+                                <a href="http://www.americancampus.com"><img src="pics/targeted_ad.png"></a>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <img src="gifs/4C_adsClicked.gif" style="border-radius:0%;width:100%;height:100%">
+                                <img src="gifs/4C_adsClicked.gif" style="border-radius:0%;width:100%;height:100%;">
                             </div>
                         </div>
                     </div>
@@ -356,24 +432,24 @@
                 <div class="well">
                     <b>Sponsored Ads</b>
                     <hr>
-                    <a href="https://www.glossier.com/"></a>
+                    <a href="https://www.https://aeroon24th.com//"></a>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="pics/ad2.png">
+                            <img src="pics/sponsored_ad.png">
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <img src="gifs/4C_adsClicked.gif" style="border-radius:0%;width:100%;height:100%">
+                            <img src="gifs/4C_adsClicked.gif" style="border-radius:0%;width:100%;height:100%;">
                         </div>
                     </div>
                     <hr>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <a href="https://www.glossier.com/"><img src="pics/ad2.png"></a>
+                            <a href="https://www.wayfair.com/"><img src="pics/ad1.png"></a>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <img src="gifs/4C_adsClicked.gif" style="border-radius:0%;width:100%;height:100%">
+                            <img src="gifs/4C_adsClicked.gif" style="border-radius:0%;width:100%;height:100%;">
                         </div>
                     </div>
                 </div>

@@ -125,13 +125,46 @@ hr {
 }
 
 .dropdown button {
-        background-color: Transparent;
-        background-repeat:no-repeat;
-        border: none;
-        cursor:pointer;
-        overflow: hidden;
-        outline:none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
+
+.dropdown-btn {
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-style: hidden;
+}
+
+.dropdown-btn:hover>.dropdown-menu {
+    display:block;
+}
+
+.dropdown-menu {
+   list-style: none;
+   white-space: nowrap;
+   border: 9px solid #02ad2d;
+   padding: 10px;
+   background-color: #ffffff;
+}
+
+.dropdown-menu::before{
+    position: absolute;
+    top: -31px;
+
+    display: inline-block;
+    /*border-top: 30px solid transparent;*/
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid #02ad2d;
+    border-right: 30px solid transparent;
+    content: '';
+ }
 
 /*ADS*/
 #ad img {
