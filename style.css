@@ -147,6 +147,7 @@ hr {
 }
 
 .dropdown-menu {
+    margin: 0;
    list-style: none;
    white-space: nowrap;
    border: 9px solid #02ad2d;
